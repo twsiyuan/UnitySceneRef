@@ -70,15 +70,12 @@ public class SceneRefSettings : ScriptableObject
         var scenes = new List<SceneRefSettings.Scene>();
         foreach (var s in EditorBuildSettings.scenes)
         {
-            if (s.enabled)
+            scenes.Add(new SceneRefSettings.Scene()
             {
-                scenes.Add(new SceneRefSettings.Scene()
-                {
-                    GUID = s.guid.ToString(),
-                    BuildIndex = SceneUtility.GetBuildIndexByScenePath(s.path),
-                    SceneName = Path.GetFileNameWithoutExtension(s.path),
-                });
-            }
+                GUID = s.guid.ToString(),
+                BuildIndex = SceneUtility.GetBuildIndexByScenePath(s.path),
+                SceneName = Path.GetFileNameWithoutExtension(s.path),
+            });
         }
 
         var data = ScriptableObject.CreateInstance<SceneRefSettings>();

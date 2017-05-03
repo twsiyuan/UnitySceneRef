@@ -64,20 +64,12 @@ public class SceneRef
         }
     }
 
-    public bool IsValid
-    {
-        get
-        {
-            return this.BuildIndex >= 0;
-        }
-    }
-
     public int BuildIndex
     {
         get
         {
             var s = this.Scene;
-            return s == null ? -1 : s.BuildIndex;
+            return s == null ? -2 : s.BuildIndex;
         }
     }
 

@@ -89,7 +89,7 @@ public class SceneRefPropertyDrawer : PropertyDrawer
             }
             else if (!build.enabled)
             {
-                EditorGUI.HelpBox(helpRect, "Scene is not enabled", MessageType.Warning);
+                EditorGUI.HelpBox(helpRect, "Scene is not enabled (load from assetbndle?)", MessageType.Info);
                 if (GUI.Button(buttonRect, "Make enabled"))
                 {
                     var s = EditorBuildSettings.scenes;

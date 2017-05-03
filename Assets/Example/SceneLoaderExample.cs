@@ -10,14 +10,7 @@ public class SceneLoaderExample : MonoBehaviour
     {
         foreach (var s in this.scenes)
         {
-            if (s.IsValid)
-            {
-                SceneManager.LoadScene(s.SceneName, LoadSceneMode.Additive);
-            }
-            else
-            {
-                Debug.LogWarningFormat("Scene '{0}' is not in build settings", s.SceneName);
-            }
+            SceneManager.LoadScene(s.SceneName, LoadSceneMode.Additive);
         }
 	}
 }
