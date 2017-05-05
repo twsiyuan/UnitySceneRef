@@ -1,6 +1,6 @@
 # UnitySceneRef
 
-A simple Scene reference implementation in Unity
+A simple Scene reference implementation in Unity 5.6.x or above
 
 ## How to install
 
