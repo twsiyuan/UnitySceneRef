@@ -4,7 +4,7 @@ A simple Scene reference implementation in Unity 5.6.x or above
 
 ## How to install
 
-Download and copy [/Assets/Plugins/SceneRef/\*.\*](/Assets/Plugins/SceneRef/) into your unty project, Unity 5.6.x or above.
+Download and copy [/Assets/Plugins/SceneRef/\*.\*](/Assets/Plugins/SceneRef/) into your unty project.
 
 ## How to use
 
